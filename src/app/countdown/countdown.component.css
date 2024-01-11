@@ -89,4 +89,9 @@
     font-weight: 500;
     letter-spacing: 2px;
   }
+  .semi-circle-right,
+  .semi-circle-left {
+    width: 5px;
+    height: 10px;
+  }
 }
