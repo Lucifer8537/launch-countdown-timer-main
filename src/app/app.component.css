@@ -1,0 +1,19 @@
+.container {
+  font-family: "RedHatText";
+  background: url("../assets/pattern-hills.svg"), url("../assets/bg-stars.svg"),
+    linear-gradient(hsl(235, 16%, 14%), rgba(33, 26, 41));
+  background-repeat: no-repeat, repeat;
+  background-size: contain, auto;
+  background-position: bottom;
+  height: 100%;
+  width: 100%;
+}
+.countdown-title {
+  color: white;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  margin: 0 auto;
+  width: fit-content;
+  padding: 7% 0% 0% 0%;
+}
