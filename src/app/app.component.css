@@ -1,3 +1,7 @@
+.countdown-container {
+  display: flex;
+}
+
 .container {
   font-family: "RedHatText";
   background: url("../assets/pattern-hills.svg"), url("../assets/bg-stars.svg"),
@@ -7,6 +11,7 @@
   background-position: bottom;
   height: 100%;
   width: 100%;
+  position: relative;
 }
 .countdown-title {
   color: white;
@@ -15,5 +20,43 @@
   letter-spacing: 5px;
   margin: 0 auto;
   width: fit-content;
-  padding: 7% 0% 0% 0%;
+  padding: 7% 0% 7% 0%;
+}
+
+.social-container {
+  position: absolute;
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  gap: 35px;
+  bottom: 90px;
+  transform: translateX(-50%);
+  left: 50%;
+}
+@media (min-width: 679px) {
+  .social {
+    cursor: pointer;
+  }
+  .social:hover {
+    filter: hue-rotate(96deg) saturate(247%) brightness(102%);
+  }
+}
+@media (max-width: 678px) {
+  .container {
+    background-size: auto, auto;
+    background-position: 75% bottom;
+    padding: 0% 5%;
+    width: 90%;
+  }
+  .countdown-title {
+    padding: 0;
+    text-align: center;
+    padding-top: 50%;
+
+    padding-bottom: 15%;
+  }
+  .social-container {
+    bottom: 8%;
+  }
 }
